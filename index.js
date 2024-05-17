@@ -11,7 +11,7 @@ app.get("/api/whoami", function (req, res) {
   // console.log(JSON.stringify(req.headers));
   const language = req.headers['accept-language'];
   const software = req.headers['user-agent'];
-  res.send({ip: ip, language: language, software: software});
+  res.send({ipaddress: ip, language: language, software: software});
 })
 
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
